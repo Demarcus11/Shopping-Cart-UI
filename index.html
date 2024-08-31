@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="module" defer></script>
+
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-layout">
+        <main class="product-page">
+          <h2 class="title">Desserts</h2>
+
+          <ul class="products product-grid"></ul>
+        </main>
+
+        <aside class="your-cart">
+          <h2 class="title">Your Cart (<span class="amount">0</span>)</h2>
+
+          <div class="empty-cart-img">
+            <img src="./assets/images/illustration-empty-cart.svg" alt="" />
+          </div>
+
+          <ul class="cart-list"></ul>
+
+          <div class="order-total" hidden>
+            <div>
+              <p class="text">Order Total</p>
+              <p class="total">$0.00</p>
+            </div>
+
+            <div class="alert">
+              <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+              <p>This is a <strong>carbon-neutral</strong> delivery</p>
+            </div>
+
+            <button class="confirm-btn">Confirm Order</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
